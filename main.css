@@ -23,6 +23,12 @@ h1{
     justify-content: space-between;
     box-sizing: border-box;
     padding: 0px 3%;
+    z-index: 5000;
+    font-size: 2.05em;
+}
+.nav h1{
+    margin-bottom: 0px;
+    margin-top: 1vh;
 }
 .title{
     text-align: center;
@@ -66,10 +72,12 @@ form input{
     width:40vw;
     font-size: 1.5em;
     border-radius: 20px;
+    padding-left:5%;
+    border-style: none;
 }
 form button{
     font-size: 1.5em;
-    height: 5vh;
+    height:5vh;
     background-color: var(--mainGold);
     color: var(--mainBlue);
     border-style: none;
@@ -99,7 +107,7 @@ form button{
 }
 .Sections{
     font-size:3rem;
-    margin-left: 10vw;
+    text-align: center;
 }
 subdivisions{
     display: flex;
@@ -107,5 +115,48 @@ subdivisions{
     justify-content: space-around;
 }
 .subImage{
-    height: 40vh;
+    width: 50%;
+}
+.noshow{
+    display: none;
+}
+.hinweis{
+    text-align: center;
+
+}
+@media screen and (max-width: 1200px){
+    .logo{
+        width: 80%;
+    }
+    .nav{
+        font-size: 1.5em;
+    }
+    .Sections{
+        font-size: 2.5em;
+    }
+}
+@media screen and (max-width: 1000px){
+    .logo{
+        width: 100%;
+        border-radius: 0%;
+    }
+    form input{
+        width: 100vw;
+        border-radius: 0%;
+    }
+    form button{
+        width:80%;
+    }
+}
+@media screen and (max-width: 550px){
+    .logo{
+        width: 100%;
+        
+    }
+    .nav{
+        font-size: 1em;
+    }
+    .Sections{
+        font-size: 1.5em;
+    }
 }

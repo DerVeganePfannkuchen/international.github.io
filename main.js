@@ -8,11 +8,8 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbx4x4YhNYetbgcVLCwigP
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => {
                     msg.classList.add("confr")
-                    msg.innerHTML= "Thank You! Your information has been captured";
-                    setTimeout(function() {
-                        msg.innerHTML= "";
-                        msg.classList.remove("confr")
-                    },5000);
+                    msg.innerHTML= "Thank You! You're subscribed!";
+                    form.classList.add("noshow")
                     form.reset();
                     
                 })
