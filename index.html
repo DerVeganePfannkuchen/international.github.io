@@ -3,14 +3,12 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport"  content="width= device-width, initial-scale=1">
+        <title>Home</title>
         <link rel= "stylesheet" href="main.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
-            </style>
 
     </head>
     <body>
@@ -24,15 +22,18 @@
         </div>
         <main>
             <img class="logo" src="assets/[WHITE] INTERNATIONAL SPHERES white strongest drop shadow.png"alt="International Spheres logo">
-
+            <h1 class="Sections Atitle">About</h1>
+            <h1 class="about">International Spheres is a Human-Centered Design company that provides clients with the ability to improve 
+                                their creative and innovative problem-solving skills.</h1>
             <welcome>
+                <h1 class="Sections">Newsletter</h1>
                 <h1 class="welcome">Website comming soon! Signup below to get notifed when we launch!</h1>
                 <form name ="submit-to-google-sheet">
                     <input type="email" name="Email" placeholder="Email" required>
                     <input type="text"  pattern="[ä-üÄ-üa-zA-Z\-']{1,26}" name="fname" placeholder="First name" required>
                     <input type="text"  pattern="[ä-üÄ-üa-zA-Z\-']{1,26}" name="lname" placeholder="Last name" required>
                     <p class="hinweis">*only letters and the - and the ' characters for the first and last name allowed*</p>
-                    <button type="submit">Send</button>
+                    <button id ="send" type="submit">Send</button>
                 </form>
                 <span id="msg" class="button"></span>
             </welcome>
