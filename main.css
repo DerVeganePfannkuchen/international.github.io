@@ -122,7 +122,8 @@ subdivisions{
 }
 .hinweis{
     text-align: center;
-
+    font-size: 1.2em;
+    margin: 1%;
 }
 @media screen and (max-width: 1200px){
     .logo{
